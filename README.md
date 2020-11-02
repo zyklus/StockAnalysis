@@ -1,8 +1,11 @@
 # StockAnalysis
 stock analysis 
-两个程序都是用于抓取市场日级别数据的
+内含3个数据分析代码
+tushare-csv和yfinance-csv都是用于抓取市场日级别数据的，基于lonecapital双均线原理
 基于windows系统开发，上班摸鱼可用
 可用jupyter note直接开发，一键运行
 
 tushare-csv使用tushare分析A股市场，需要注册tushare，获取token
 yfinance使用yahoo数据分析美股市场，还没有增加复权计算
+
+tushare-BBperiod在lonecapital基础上加入了通达信的涨跌周期图原理，使用涨跌周期图代替常见周期，然后使用涨跌周期中的日/周/月3期MACD共振指标判断，属于定制开发项目
